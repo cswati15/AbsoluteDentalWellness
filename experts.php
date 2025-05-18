@@ -77,8 +77,118 @@
 
 <body>
 
-    <?php include 'layouts/header.php'; ?>
-    <?php include 'layouts/banner.php'; ?>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top custom-navbar">
+        <div class="container">
+            <img src="images/logo.jpg" alt="Clinic Logo" class="me-3" style="max-height: 50px;">
+            <a class="navbar-brand fw-bold text-primary" href="../user/index.php">Dr. Tiwari's Absolute Dental
+                Wellness</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../user/index.php">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#about" id="aboutDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../user/experts.php">Know Your Doctor</a></li>
+                            <li><a class="dropdown-item" href="../user/consultants.php">Consultant Panel</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../user/services.php">Treatment Services</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#gallery" id="galleryDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Gallery
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../user/image-gallery.php">Images</a></li>
+                            <li><a class="dropdown-item" href="../user/video-gallery.php">Videos</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://clinicia.com/calendar/book?u=65251">Book Appointment</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="offers">
+        <div id="offerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active" style="background: linear-gradient(135deg, #e3f2fd, #ffffff);">
+                    <div class="container py-5 text-center">
+                        <h2 class="text-primary fw-bold mb-3" style="font-family: 'Playfair Display', serif;">
+                            🎉 Limited Time Offer: Flat 20% OFF on Smile Designing!
+                        </h2>
+                        <p class="text-muted mb-3">Revamp your smile with veneers, whitening, and more – done by
+                            experts.
+                        </p>
+                        <a href="https://clinicia.com/calendar/book?u=65251" class="btn btn-primary rounded-pill">Book
+                            Now</a>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item" style="background: linear-gradient(135deg, #fce4ec, #fff);">
+                    <div class="container py-5 text-center">
+                        <h2 class="text-primary fw-bold mb-3" style="font-family: 'Playfair Display', serif;">
+                            🦷 Free Dental Checkup Every Sunday!
+                        </h2>
+                        <p class="text-muted mb-3">Walk-in or book online. Limited slots available.</p>
+                        <a href="https://clinicia.com/calendar/book?u=65251"
+                            class="btn btn-outline-primary rounded-pill">Schedule Today</a>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item" style="background: linear-gradient(135deg, #e8f5e9, #ffffff);">
+                    <div class="container py-5 text-center">
+                        <h2 class="text-primary fw-bold mb-3" style="font-family: 'Playfair Display', serif;">
+                            👨‍👩‍👧‍👦 Family Packages Available
+                        </h2>
+                        <p class="text-muted mb-3">Affordable plans for your entire family's dental care.</p>
+                        <a href="#contact" class="btn btn-primary rounded-pill">Contact Us</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#offerCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#offerCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
     <!-- Our Expert Dentists Section -->
     <section id="doctors" class="py-5" style="background-color: #ffffff;">
         <div class="container">
@@ -154,7 +264,66 @@
     </div>
 
     <section id="footer">
-        <?php include 'layouts/footer.php'; ?>
+
+        <!-- Footer Section (Dark Theme to Match Live Tracker) -->
+        <footer class="pt-5 pb-4 text-white" style="background: linear-gradient(135deg, #1c1f26, #2e323a);">
+            <div class="container">
+
+                <!-- Logo and Title -->
+                <div class="row align-items-center mb-4">
+                    <div class="col-md-6 d-flex align-items-center">
+                        <img src="images/logo.jpg" alt="Clinic Logo" class="me-3 shadow-sm rounded"
+                            style="max-height: 60px;">
+                        <h5 class="fw-bold text-light mb-0">Dr. Tiwari's Absolute Dental Wellness</h5>
+                    </div>
+                </div>
+
+                <!-- Contact & Hours -->
+                <div class="row gy-4">
+                    <div class="col-md-6">
+                        <h6 class="fw-bold text-light mb-2">Contact Us</h6>
+                        <p class="mb-1"><i class="fas fa-phone-alt me-2 text-light"></i><strong>Mobile:</strong>
+                            702-146-3993
+                        </p>
+                        <p class="mb-1"><i class="fas fa-phone me-2 text-light"></i><strong>Landline:</strong>
+                            022-3173-3782
+                        </p>
+                        <p><i class="fas fa-map-marker-alt me-2 text-light"></i><strong>Address:</strong> Shop No. 3,
+                            Radha
+                            Madhav, Ideal Park, Mira Road (E) 401107</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="fw-bold text-light mb-2">Working Hours</h6>
+                        <p class="mb-1"><i class="far fa-clock me-2 text-light"></i><strong>Mon–Sat:</strong> 10:30 AM –
+                            2:00
+                            PM & 5:00 PM – 9:30 PM</p>
+                        <p><i class="far fa-calendar-check me-2 text-light"></i><strong>Sunday:</strong> By Prior
+                            Appointment
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Map Section in Footer (Smaller Height) -->
+                <div class="mt-5">
+                    <h6 class="fw-bold text-light mb-3">Find Us Here</h6>
+                    <div class="rounded shadow overflow-hidden" style="height: 250px;">
+                        <iframe
+                            src="https://www.google.com/maps?q=Shop+No.+3,+Radha+Madhav,+Ideal+Park,+Mira+Road+(E)+401107&output=embed"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+                <hr class="my-4 border-light" />
+
+                <!-- Copyright -->
+                <div class="text-center small">
+                    &copy; 2025 Dr. Tiwari's Absolute Dental Wellness. All rights reserved.
+                </div>
+            </div>
+
+        </footer>
     </section>
 
     <!-- Scripts -->
